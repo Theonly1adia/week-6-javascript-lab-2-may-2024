@@ -74,32 +74,20 @@ function partTwoB () {
 // add more friends from the prompt
 function partThreeA () {
   // 1. prompt for a friend
-  let newFriends = prompt("Enter a friend's name.");
-
-  newFriends[0] = "Adia";
-  newFriends[1] = "Brenda";
-  newFriends[2] = "Cecelia";
-  newFriends[3] = "Darryl";
-  newFriends[4] = "Enzo";
+  let friend = prompt("Enter a friend's name.");
 
   // 2. add the friend to the message
-  let newfriends = prompt("Enter a friend's name.");
+  messageParagraph.innerHTML += `, ${friend}`;
+
 }
 
 // Try it!
 // Try prompting for a friend with a slightly different prompt or writing the message in a slightly different format.
 function partThreeB () {
-  let friends = [];
-  // 1. prompt for a friend
-  let friends = prompt("Enter a new friend's name.");
-
-  friends[0] = "Adia";
-  friends[1] = "Brenda";
-  friendsriends[2] = "Cecelia";
-  friendsriends[3] = "Darryl";
-  friendsriends[4] = "Enzo";
+   // 1. prompt for a friend
+   let friend = prompt("Enter a friend's name.");
   // 2. add the friend to the message
-  let friends = prompt("Enter your new friend's name.");
+  messageParagraph.innerHTML += `, ${friend}`;
 }
 
 // Example
@@ -132,12 +120,13 @@ function partFourB () {
   totalFavFlavors = myFavFlavors.length;
 
   // 1. prompt for a flavor
-
+  newFavFlavor = prompt(` This is my new favoite flavor ${newFavFlavor}. What is yours?`);
   // 2. add the flavor to the array with push()
-
+newFavFlavor.push(newFavFlavor);
   // 3. add the flavor to the message
-
+  messageList.innerHTML += `<li>${newFavFlavor}</li>`;
   // 4. log the array to the console for debugging
-
+  console.log(myFavFlavors);
 }
+
 
